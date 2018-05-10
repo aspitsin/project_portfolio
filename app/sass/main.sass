@@ -38,6 +38,260 @@ body
 b, strong
 	font-weight: bold
 
+//Гамбургер
+.hamburger.hamburger--boring.MenuChefOpen
+	top: 0
+	+media-breakpoint-up(md)
+		display: none
 
+
+
+
+//Меню
+.header
+	height: 70px
+	border-bottom: 1px solid $accent
+	margin-top: 20px
+	&-logo 
+		display: block
+		width: 200px
+		height: 50px
+		img 
+			width: 100%
+
+
+			
+	&-nav-list
+		margin-top: 10px
+		list-style: none
+		text-align: center
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		li 
+			a 
+				color: #333
+				&:hover
+					text-decoration: none
+			
+.header-nav
+	+media-breakpoint-down(md)
+		+make-col-offset(2)	
+
+// Паралаксы
+
+.about
+	padding: 3em 0
+	span
+		font-size: 2em
+		
+
+.working-space-bg
+	display: block
+	max-height: 900px
+	overflow: hidden	
+	img
+		position: relative
+		top: -50px
+		width: 100%
+		
+.brain-bg
+	display: block
+	min-height: 300
+	max-height: 400px
+	overflow: hidden	
+	img
+		position: relative
+		top: -150px
+		height: auto
+		width: 100%
+
+.skill
+  padding: 3em
+
+.flex-row 
+	display: flex
+	flex-wrap: wrap	
+
+.skill-card,
+.skill-card-description 
+	flex-direction: column
+	display: flex
+	flex: 1 0 auto
+	height: auto
+	position: relative
+	
+
+.skill-text 
+	flex-grow: 1
+
+.skill-card
+	img 
+		width: 100%
+	
+	
+//Price 
+
+.page .page-wrap .content-wrapper
+  padding-bottom: 30px
+
+.page_wrap
+  background-color: rgb(51, 51, 51)
+
+.form_wrap
+  background-color: rgb(243, 243, 243)
+
+.form-group
+  margin-bottom: 5px
+  line-height: 20px
+
+.checkbox
+  line-height: 20px
+
+h4
+  color: rgb(214, 80, 80)
+  margin-bottom: 15px
+
+label
+  cursor: pointer
+  transition: 0.3s all ease
+  -webkit-transition: 0.3s all ease
+  outline: none
+  padding-bottom: 2px
+  &:hover
+    color: rgb(118, 118, 118)
+    transition: 0.3s all ease
+    -webkit-transition: 0.3s all ease
+
+.radio_style
+  opacity: 0
+  outline: none
+  &:not(checked)
+    position: absolute
+    + label
+      position: relative
+      padding: 0 0 0 28px
+      &:before
+        content: ''
+        position: absolute
+        top: 0px
+        left: 0
+        width: 20px
+        height: 20px
+        border: 1px solid #CDD1DA
+        border-radius: 50%
+        background: #FFF
+      &:after
+        content: ''
+        position: absolute
+        top: 4px
+        left: 4px
+        width: 12px
+        height: 12px
+        border-radius: 50%
+        background: rgb(51, 51, 51)
+        box-shadow: 0 1px 1px #fff
+        opacity: 0
+        transition: 0.3s all ease
+        -webkit-transition: 0.3s all ease
+  &:checked + label:after
+    opacity: 1
+  &:focus + label:before
+    outline: none
+
+
+
+.checkbox_style
+  &:not(checked)
+    position: absolute
+    opacity: 0
+    + label
+      position: relative
+      padding: 0 0 0 50px
+      &:before
+        content: ''
+        position: absolute
+        top: 2px
+        left: 0
+        width: 40px
+        height: 18px
+        border-radius: 13px
+        background: #CDD1DA
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2)
+      &:after
+        content: ''
+        position: absolute
+        top: 5px
+        left: 2px
+        width: 14px
+        height: 14px
+        border-radius: 10px
+        background: #FFF
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3)
+        transition: 0.3s all ease
+        -webkit-transition: 0.3s all ease
+  &:checked + label
+    &:before
+    &:after
+      left: 22px
+      background: rgb(51, 51, 51)
+  &:focus + label:before
+
+
+.table_summ_wrap
+  overflow-x: auto
+
+.table_summ
+  color: rgb(118, 118, 118)
+  margin-top: 20%
+  font-weight: 600
+  font-size: 16px
+
+table
+  border-collapse: collapse
+  width: 100%
+  caption
+    color: rgb(255, 255, 255)
+    text-align: center
+    margin-bottom: 50px
+    position: relative
+    font-weight: 600
+    line-height: normal
+    text-transform: uppercase
+    padding-bottom: 10px
+    font-size: 32px
+    margin-top: 0
+    &::after
+      content: ""
+      position: absolute
+      left: 50%
+      bottom: 0
+      width: 50px
+      height: 1px
+      margin-left: -25px
+      background-color: #d65050
+
+th,td
+  text-align: left
+  padding: 20px 55px
+  border: none
+
+.site_type,
+.design_summ,
+.additional,
+.summ
+  color: #d65050
+
+td:nth-child(even)
+  text-align: center
+
+.summ_style
+  font-size: 18px
+
+.summ span
+  padding: 0px 10px
+
+.price_text_wrap
+  padding-top: 30px
 
 @import "media" // Always at the end
