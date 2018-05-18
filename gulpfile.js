@@ -41,7 +41,7 @@ gulp.task("js", function() {
       .src([
         "app/libs/jquery/dist/jquery.min.js",
         "app/libs/rellax/rellax.min.js",
-        "app/libs/slick-carousel/slick/slick.min.js",
+        "app/libs/parallax.js/parallax.min.js",
         "app/js/common.js" // Always at the end
       ])
       .pipe(concat("scripts.min.js"))

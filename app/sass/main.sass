@@ -17,6 +17,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
+	background-color: transparent
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -80,34 +81,18 @@ b, strong
 
 // Паралаксы
 
-.about
+#about
+	z-index: 3
 	padding: 3em 0
 	span
 		font-size: 2em
-		
 
-.working-space-bg
-	display: block
-	max-height: 900px
-	overflow: hidden	
-	img
-		position: relative
-		top: -50px
-		width: 100%
-		
-.brain-bg
-	display: block
-	min-height: 300
-	max-height: 400px
-	overflow: hidden	
-	img
-		position: relative
-		top: -150px
-		height: auto
-		width: 100%
 
-.skill
-  padding: 3em
+
+		
+#skill
+	z-index: 3
+  
 
 .flex-row 
 	display: flex
@@ -130,16 +115,17 @@ b, strong
 		width: 100%
 	
 	
-//Price 
+//Price //https://github.com/ElenaIar/Online-price-calculator
 
 .page .page-wrap .content-wrapper
   padding-bottom: 30px
 
 .page_wrap
-  background-color: rgb(51, 51, 51)
+	padding-top: 20px
+  background-color: white
 
 .form_wrap
-  background-color: rgb(243, 243, 243)
+  background-color: white
 
 .form-group
   margin-bottom: 5px
@@ -247,20 +233,18 @@ label
   font-weight: 600
   font-size: 16px
 
-table
+
+.table_summ
   border-collapse: collapse
   width: 100%
   caption
-    color: rgb(255, 255, 255)
+    color: black
     text-align: center
-    margin-bottom: 50px
     position: relative
     font-weight: 600
     line-height: normal
     text-transform: uppercase
-    padding-bottom: 10px
     font-size: 32px
-    margin-top: 0
     &::after
       content: ""
       position: absolute
@@ -269,7 +253,7 @@ table
       width: 50px
       height: 1px
       margin-left: -25px
-      background-color: #d65050
+      background-color: black
 
 th,td
   text-align: left
@@ -286,12 +270,74 @@ td:nth-child(even)
   text-align: center
 
 .summ_style
-  font-size: 18px
+  font-size: 32px
 
 .summ span
   padding: 0px 10px
 
 .price_text_wrap
   padding-top: 30px
+	
+.page_wrap,
+.table_summ_wrap
+	background-color: white
+
+
+	//Карта
+#maps
+	width: 100%
+	height: 400px
+
+	//Паралаксы
+.parallax
+	background-color: transparent
+	&-img
+		height: 400px
+		background-color: inherit
+
+.parallax1
+	background-color: transparent
+	&-img
+		height: 900px
+		background-color: inherit
+
+.parallax2
+	background-color: transparent
+	&-img
+		height: 400px
+		background-color: inherit
+
+#skill
+	padding: 3em 0
+#price,
+#footer
+	padding: 3em 0
+
+.footer
+  &-phone
+    display: inline-flex
+    i
+      font-size: 3em
+    p 
+      padding-left: 10px 
+      font-size: 2em
+  &-logo
+    display: flex
+    justify-content: space-around
+    i 
+      font-size: 3em
+      &:hover
+        color: pink
+
+.footer
+  &-phone
+    +media-breakpoint-up(lg)
+    justify-content: center
+
+.about
+  &-ticket
+    +media-breakpoint-down(sm)
+      +make-col-offset(0)
+
 
 @import "media" // Always at the end
