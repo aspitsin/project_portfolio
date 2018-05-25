@@ -309,18 +309,21 @@ td:nth-child(even)
 
 #skill
 	padding: 3em 0
-#price,
-#footer
+#price
 	padding: 3em 0
+
+#footer
+	padding: 2em 0
 
 .footer
   &-phone
     display: inline-flex
+    padding-top: 10px 
     i
-      font-size: 3em
-    p 
-      padding-left: 10px 
       font-size: 2em
+    p 
+      padding-left: 10px
+      font-size: 1.5em
   &-logo
     display: flex
     justify-content: space-around
@@ -339,5 +342,42 @@ td:nth-child(even)
     +media-breakpoint-down(sm)
       +make-col-offset(0)
 
+.youtube
+  width: 100%
+  
+.dyoutube 
+  padding-top: 45px
+  display: none
+
+#button
+  display: inline-block
+  background-color: #d1d1d1
+  width: 50px
+  height: 50px
+  text-align: center
+  border-radius: 4px
+  position: fixed
+  bottom: 30px
+  right: 30px
+  transition: background-color .3s,  opacity .5s, visibility .5s
+  opacity: 0
+  visibility: hidden
+  z-index: 1000
+  &::after
+    content: "\f077"
+    font-family: FontAwesome
+    font-weight: normal
+    font-style: normal
+    font-size: 2em
+    line-height: 50px
+    color: #fff
+  &:hover
+    cursor: pointer
+    background-color: #333
+  &:active
+    background-color: #555
+  &.show
+    opacity: 1
+    visibility: visible
 
 @import "media" // Always at the end

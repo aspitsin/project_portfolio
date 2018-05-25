@@ -4,7 +4,8 @@
   "description": "OptimizedHTML 4 - Start HTML Template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "micro"
   },
   "author": "WebDesign Master",
   "license": "ISC",
@@ -23,6 +24,7 @@
   },
   "dependencies": {
     "jquery-parallax.js": "^1.5.0",
-    "rellax": "^1.6.2"
+    "rellax": "^1.6.2",
+    "micro": "latest"
   }
 }
