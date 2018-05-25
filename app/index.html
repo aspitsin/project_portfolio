@@ -6,64 +6,479 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
+	<title>WEB DESIGN AGENCY</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
-	
+
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+	 crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
+
+
+
 </head>
 
 <body>
 
 	<!-- Custom HTML -->
-
-	<div class="container">
-
-		<div class="row">
-
-			<div class="col-8 offset-2">
-				
-				<img class="img-responsive" src="img/preview.jpg" alt="Start HTML5 Template">
-
-				<br>
-
-				<h2>Welcome to startup HTML template OptimizedHTML 4!</h2>
-
-				<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. Ad distinctio animi, dolorum eaque praesentium unde aliquid, mollitia itaque voluptate quos modi et incidunt tempora fugiat voluptatum quia esse dolor repellat.</p>
-				<p>Nemo velit incidunt assumenda, eaque, sequi vitae facilis doloribus qui totam, fuga iure dignissimos ab non praesentium. Vitae similique, corrupti aliquam nam modi explicabo distinctio qui cum officia ullam quam!</p>
-				<p>Aperiam veritatis debitis quibusdam animi totam quos mollitia aspernatur porro consectetur id quod tempore numquam, ullam ex quae quasi voluptatem incidunt placeat asperiores quas autem! Labore modi quae nulla illo!</p>
-
-				<br>
-
-				<div class="row">
-
-					<div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quo vero molestias, esse doloribus corrupti, nemo minus ullam tempore tenetur magni aut quos soluta sit adipisci eius expedita amet non.</div>
-					<div class="col-6">Odit enim harum minus nam excepturi quae vitae consectetur repudiandae natus neque ab asperiores repellat quo dicta vel accusamus voluptatum rerum autem eaque rem laudantium, sint veritatis. Minus, unde rem.</div>
-
+	<section class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-3">
+					<div class="header-logo">
+						<img src="img/logo.svg" alt="logo">
+					</div>
+				</div>
+				<div class="col-lg-5 offset-4 col-md-7 d-none d-md-block header-nav">
+					<ul class="header-nav-list">
+						<li>
+							<a href="#about">Обо мне</a>
+						</li>
+						<li>
+							<a href="#skill">Мои навыки</a>
+						</li>
+						<li>
+							<a href="#price">Прайс</a>
+						</li>
+						<li>
+							<a href="#maps-section">Офис</a>
+						</li>
+						<li>
+							<a href="#footer">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="d-none d-xs-block d-md-none header-nav">
+					<div class="oldmenu">
+						<a href="#about">Обо мне</a>
+						<a href="#skill">Мои навыки</a>
+						<a href="#price">Прайс</a>
+						<a href="#maps-section">Офис</a>
+						<a href="#footer">Контакты</a>
+					</div>
 				</div>
 
-				<br>
+			</div>
+
+		</div>
+		</div>
+	</section>
+	<a id="button"></a>
+	<section class="parallax1">
+		<div class="parallax1-img" data-parallax="scroll" data-image-src="/img/photo1.jpeg"></div>
+	</section>
+
+	<section id="about">
+		<div class="container ">
+			<div class="row ">
+
+				<div class="col-md-7 ">
+
+					<h2>
+						Обо мне
+					</h2>
+
+					<p>
+						Привет. Меня зовут Алексей и я занимаюсь веб-разработкой.</br>
+						Прошел курс обучения фулл-стак в Айти-Академии.</br>
+						Верстаю адаптивные сайты под любые разрежения экрана, знаю HTML5‚ CSS3, JS, PHP. А также пре- и пост- процессоры CSS. Использую
+						автоматизаторы задач и сборщики проектов - Gulp.
+
+
+					</p>
+				</div>
+				<div class="col-md-3 offset-2 about-ticket">
+					<h2>Cчетчик работ</h2>
+					<span>2</span>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<section class="parallax">
+		<div class="parallax-img" data-parallax="scroll" data-image-src="/img/brain_1.jpg"></div>
+	</section>
+
+	<section id="skill">
+		<div class="container">
+			<h2>Мои навыки</h2>
+			<div class="flex-row row">
+
+
+				<div class="col-xs-6 col-sm-6 col-md-3">
+					<div class="skill-card">
+						<div class="click-for-video">
+							<img src="img/skill-html.svg">
+						</div>
+						<div class="dyoutube">
+							<iframe class="youtube"></iframe>
+						</div>
+						<div class="skill-card-description">
+							<h3>HTML</h2>
+								<p class="skill-text ">Yo! His palms are sweaty, knees weak, arms are heavy</br>There's vomit on his sweater already: Mom's spaghetti</br>He's
+									nervous, but on the surface he looks calm and ready </br> To drop bombs, but he keeps on forgetting
+								</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-sm-6 col-md-3">
+					<div class="skill-card">
+						<img src="img/skill-css.svg">
+						<div class="skill-card-description">
+							<h3>CSS</h2>
+								<p class="skill-text ">Look, if you had one shot, or one opportunity</br>To seize everything you ever wanted,</br>in one moment</br>Would
+									you capture it, or just let it slip?
+								</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3">
+					<div class="skill-card">
+						<img src="img/skill-js (2).svg">
+						<div class="skill-card-description">
+							<h3>JS</h2>
+								<p class="skill-text ">You better lose yourself in the music The moment,</br>you own it, you better never let it go</br>You only get one
+									shot, do not miss your chance to blow</br>This opportunity comes once in a lifetime, yo</br>You better lose yourself
+									in the music
+									</br>The moment, you own it, you better never let it go</br>You only get one shot, do not miss your chance to blow</br>This
+									opportunity comes once in a lifetime, yo You better…
+								</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-sm-6 col-md-3">
+					<div class="skill-card">
+						<img src="img/skill-php.svg">
+						<div class="skill-card-description">
+							<h3>PHP</h2>
+								<p class="skill-text ">Работа со строками. Массивы. Циклы. Функции. Работа с Базой Данных. POST, GET.
+								</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3">
+					<div class="skill-card">
+						<img src="img/skill-jq.svg">
+						<div class="skill-card-description">
+							<h3>JQuery</h2>
+								<p class="skill-text ">Mom, I love you, but this trailer's got To go; I cannot grow old in Salem's Lot So here I go, it's my shot: feet,
+									fail me not This may be the only opportunity that I got
+								</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3">
+					<div class="skill-card">
+						<img src="img/skill-sass.svg">
+						<div class="skill-card-description">
+							<h3>SASS</h2>
+								<p class="skill-text ">You better lose yourself in the music </br>The moment, you own it, you better never let it go</br>You only get one
+									shot, do not miss your chance to blow </br>This opportunity comes once in a lifetime, yo You better…
+								</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3">
+					<div class="skill-card">
+						<img src="img/skill-git.svg">
+						<div class="skill-card-description">
+							<h3>Git</h2>
+								<p class="skill-text ">You better lose yourself in the music </br>The moment, you own it, you better never let it go </br>You only get one
+									shot, do not miss your chance to blow </br>This opportunity comes once in a lifetime, yo
+								</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3">
+					<div class="skill-card">
+						<img src="img/skill-ps.svg">
+						<div class="skill-card-description">
+							<h3>Photoshop</h2>
+								<p class="skill-text ">God only knows, he's grown farther from home, he's no father</br>He goes home and barely knows his own daughter</br>But
+									hold your nose, 'cause here goes the cold water</br>These hoes don't want him no mo', he's cold product</br>They
+									moved on to the next schmoe who flows</br>He nose-dove and sold nada, and so the soap opera</br>Is told, it unfolds,
+									I suppose it's old, partner</br>But the beat goes on: da-da-dom, da-dom, dah-dah, dah-dah
+								</p>
+
+						</div>
+					</div>
+				</div>
+
+
 
 			</div>
-			
 		</div>
 
-	</div>
+	</section>
+	<section class="parallax2">
+		<div class="parallax2-img" data-parallax="scroll" data-image-src="/img/photo2.jpeg"></div>
+	</section>
 
-	<script src="js/scripts.min.js"></script>
+	<section id="price">
+		<div class="container">
+			<h2>Прайс</h2>
+			<div class="row page_wrap">
+				<div class="col-6 form_wrap">
+					<form action="/" class="price_calculator">
+
+						<!-- First parameter -->
+
+						<div class="type-site">
+							<h4>Тип сайта</h4>
+							<div class="form-group">
+								<input type="radio" name="website" id="landing" class="radio_style" data-price="20000" checked>
+								<label for="landing">
+									«Лэндинг» или «Визитка»
+								</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" name="website" id="business_card" class="radio_style" data-price="50000">
+								<label for="business_card">
+									«Корпоративный сайт»
+								</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" name="website" id="store" class="radio_style" data-price="100000">
+								<label for="store">
+									«Интернет магазин»
+								</label>
+							</div>
+
+						</div>
+
+						<!-- Second parameter -->
+
+						<div class="template">
+							<h4>Дизайн</h4>
+							<div class="form-group">
+								<input type="radio" name="design" id="ready_template" class="radio_style" data-price="20000" checked>
+								<label for="ready_template">
+									Эксклюзивный дизайн
+								</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" name="design" id="your_template" class="radio_style" data-price="0">
+								<label for="your_template">
+									По вашему макету
+								</label>
+							</div>
+						</div>
+
+						<!-- Additional options -->
+
+						<div class="additionally">
+							<h4>Прочие услуги и Модули</h4>
+							<div class="checkbox">
+								<input type="checkbox" id="adaptive" class="checkbox_style" data-price="6000">
+								<label for="adaptive">
+									Адаптивный дизайн
+								</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="search" class="checkbox_style" data-price="5000">
+								<label for="search">
+									Поиска по сайту
+								</label>
+							</div>
+
+							<div class="checkbox">
+								<input type="checkbox" id="feedback" class="checkbox_style" data-price="5000">
+								<label for="feedback">
+									SEO
+								</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="callback" class="checkbox_style" data-price="5000">
+								<label for="callback">
+									Обратный звонок
+								</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="comments" class="checkbox_style" data-price="5000">
+								<label for="comments">
+									Комментарии
+								</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="fotogallery" class="checkbox_style" data-price="5000">
+								<label for="fotogallery">
+									Фотогалерея
+								</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="registration" class="checkbox_style" data-price="5000">
+								<label for="registration">
+									Регистрация
+								</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="map" class="checkbox_style" data-price="300">
+								<label for="map">
+									Карта
+								</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="calculator" class="checkbox_style" data-price="5000">
+								<label for="calculator">
+									Калькулятор
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<!-- Total -->
+
+				<div class="col-6 table_summ_wrap">
+					<table class="table_summ">
+
+						<tbody>
+							<tr>
+								<td>Тип сайта</td>
+								<td class="site_type">
+									<span>0</span>
+								</td>
+							</tr>
+							<tr>
+								<td>Дизайн</td>
+								<td class="design_summ">
+									<span>0</span>
+								</td>
+							</tr>
+							<tr>
+								<td>Модули</td>
+								<td class="additional">
+									<span>0</span>
+								</td>
+							</tr>
+							<tr class="summ_style">
+								<td>Сумма</td>
+								<td class="summ">
+									<span>0</span>₽</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="maps-section">
+		<div class="container-fluid">
+			<div id="maps">
+			</div>
+		</div>
+
+	</section>
+
+	<section id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 footer-phone">
+					<i class="fas fa-mobile-alt"></i>
+					<p>+7 (999)-986-91-91</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="footer-logo">
+						<i class="fab fa-vk"></i>
+						<i class="fab fa-facebook"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-github">
+						</i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="//unpkg.com/menuchef@1.2.1"></script>
+	<script>
+		new MenuChef('.oldmenu a', {
+			theme: 'side',
+		});
+	</script>
+
+
+	<script src="js/scripts.min.js "></script>
+	<script>
+		// Also can pass in optional settings block
+		var rellax = new Rellax('.rellax', {
+			speed: 2,
+			center: false,
+			round: true,
+			vertical: true,
+			horizontal: false
+		});
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDkkzVZ4ZF_wxYFcuhZyMJMLrp35pkqcI&callback=initMap" async
+	 defer>
+	</script>
+	<script>
+		function initMap() {
+			var uluru = { lat: 55.741015, lng: 52.414223 };
+			var map = new google.maps.Map(document.getElementById('maps'), {
+				zoom: 15,
+				center: uluru
+			});
+			var marker = new google.maps.Marker({
+				position: uluru,
+				map: map
+			});
+		}
+		google.maps.event.addDomListener(window, "load", initMap);
+	</script>
+	<script>
+		$('.click-for-video').click(function () {
+			this.style.display = 'none';
+			$('.dyoutube').css('display', 'block');
+			$('iframe.youtube').prop('src', 'https://www.youtube.com/embed/_Yhyp-_hX2s?ecver=1');
+		});
+	</script>
+	<script>
+		var btn = $('#button');
+
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > 300) {
+				btn.addClass('show');
+			} else {
+				btn.removeClass('show');
+			}
+		});
+
+		btn.on('click', function (e) {
+			e.preventDefault();
+			$('html, body').animate({ scrollTop: 0 }, '300');
+		});</script>
 
 </body>
+
 </html>

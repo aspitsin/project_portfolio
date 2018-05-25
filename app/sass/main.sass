@@ -17,6 +17,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
+	background-color: transparent
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -38,6 +39,345 @@ body
 b, strong
 	font-weight: bold
 
+//Гамбургер
+.hamburger.hamburger--boring.MenuChefOpen
+	top: 0
+	+media-breakpoint-up(md)
+		display: none
 
+
+
+
+//Меню
+.header
+	height: 70px
+	border-bottom: 1px solid $accent
+	margin-top: 20px
+	&-logo 
+		display: block
+		width: 200px
+		height: 50px
+		img 
+			width: 100%
+
+
+			
+	&-nav-list
+		margin-top: 10px
+		list-style: none
+		text-align: center
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		li 
+			a 
+				color: #333
+				&:hover
+					text-decoration: none
+			
+.header-nav
+	+media-breakpoint-down(md)
+		+make-col-offset(2)	
+
+// Паралаксы
+
+#about
+	z-index: 3
+	padding: 3em 0
+	span
+		font-size: 2em
+
+
+
+		
+#skill
+	z-index: 3
+  
+
+.flex-row 
+	display: flex
+	flex-wrap: wrap	
+
+.skill-card,
+.skill-card-description 
+	flex-direction: column
+	display: flex
+	flex: 1 0 auto
+	height: auto
+	position: relative
+	
+
+.skill-text 
+	flex-grow: 1
+
+.skill-card
+	img 
+		width: 100%
+	
+	
+//Price //https://github.com/ElenaIar/Online-price-calculator
+
+.page .page-wrap .content-wrapper
+  padding-bottom: 30px
+
+.page_wrap
+	padding-top: 20px
+  background-color: white
+
+.form_wrap
+  background-color: white
+
+.form-group
+  margin-bottom: 5px
+  line-height: 20px
+
+.checkbox
+  line-height: 20px
+
+h4
+  color: rgb(214, 80, 80)
+  margin-bottom: 15px
+
+label
+  cursor: pointer
+  transition: 0.3s all ease
+  -webkit-transition: 0.3s all ease
+  outline: none
+  padding-bottom: 2px
+  &:hover
+    color: rgb(118, 118, 118)
+    transition: 0.3s all ease
+    -webkit-transition: 0.3s all ease
+
+.radio_style
+  opacity: 0
+  outline: none
+  &:not(checked)
+    position: absolute
+    + label
+      position: relative
+      padding: 0 0 0 28px
+      &:before
+        content: ''
+        position: absolute
+        top: 0px
+        left: 0
+        width: 20px
+        height: 20px
+        border: 1px solid #CDD1DA
+        border-radius: 50%
+        background: #FFF
+      &:after
+        content: ''
+        position: absolute
+        top: 4px
+        left: 4px
+        width: 12px
+        height: 12px
+        border-radius: 50%
+        background: rgb(51, 51, 51)
+        box-shadow: 0 1px 1px #fff
+        opacity: 0
+        transition: 0.3s all ease
+        -webkit-transition: 0.3s all ease
+  &:checked + label:after
+    opacity: 1
+  &:focus + label:before
+    outline: none
+
+
+
+.checkbox_style
+  &:not(checked)
+    position: absolute
+    opacity: 0
+    + label
+      position: relative
+      padding: 0 0 0 50px
+      &:before
+        content: ''
+        position: absolute
+        top: 2px
+        left: 0
+        width: 40px
+        height: 18px
+        border-radius: 13px
+        background: #CDD1DA
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2)
+      &:after
+        content: ''
+        position: absolute
+        top: 5px
+        left: 2px
+        width: 14px
+        height: 14px
+        border-radius: 10px
+        background: #FFF
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3)
+        transition: 0.3s all ease
+        -webkit-transition: 0.3s all ease
+  &:checked + label
+    &:before
+    &:after
+      left: 22px
+      background: rgb(51, 51, 51)
+  &:focus + label:before
+
+
+.table_summ_wrap
+  overflow-x: auto
+
+.table_summ
+  color: rgb(118, 118, 118)
+  margin-top: 20%
+  font-weight: 600
+  font-size: 16px
+
+
+.table_summ
+  border-collapse: collapse
+  width: 100%
+  caption
+    color: black
+    text-align: center
+    position: relative
+    font-weight: 600
+    line-height: normal
+    text-transform: uppercase
+    font-size: 32px
+    &::after
+      content: ""
+      position: absolute
+      left: 50%
+      bottom: 0
+      width: 50px
+      height: 1px
+      margin-left: -25px
+      background-color: black
+
+th,td
+  text-align: left
+  padding: 20px 55px
+  border: none
+
+.site_type,
+.design_summ,
+.additional,
+.summ
+  color: #d65050
+
+td:nth-child(even)
+  text-align: center
+
+.summ_style
+  font-size: 32px
+
+.summ span
+  padding: 0px 10px
+
+.price_text_wrap
+  padding-top: 30px
+	
+.page_wrap,
+.table_summ_wrap
+	background-color: white
+
+
+	//Карта
+#maps
+	width: 100%
+	height: 400px
+
+	//Паралаксы
+.parallax
+	background-color: transparent
+	&-img
+		height: 400px
+		background-color: inherit
+
+.parallax1
+	background-color: transparent
+	&-img
+		height: 900px
+		background-color: inherit
+
+.parallax2
+	background-color: transparent
+	&-img
+		height: 400px
+		background-color: inherit
+
+#skill
+	padding: 3em 0
+#price
+	padding: 3em 0
+
+#footer
+	padding: 2em 0
+
+.footer
+  &-phone
+    display: inline-flex
+    padding-top: 10px 
+    i
+      font-size: 2em
+    p 
+      padding-left: 10px
+      font-size: 1.5em
+  &-logo
+    display: flex
+    justify-content: space-around
+    i 
+      font-size: 3em
+      &:hover
+        color: pink
+
+.footer
+  &-phone
+    +media-breakpoint-up(lg)
+    justify-content: center
+
+.about
+  &-ticket
+    +media-breakpoint-down(sm)
+      +make-col-offset(0)
+
+.youtube
+  width: 100%
+  
+.dyoutube 
+  padding-top: 45px
+  display: none
+
+#button
+  display: inline-block
+  background-color: #d1d1d1
+  width: 50px
+  height: 50px
+  text-align: center
+  border-radius: 4px
+  position: fixed
+  bottom: 30px
+  right: 30px
+  transition: background-color .3s,  opacity .5s, visibility .5s
+  opacity: 0
+  visibility: hidden
+  z-index: 1000
+  &::after
+    content: "\f077"
+    font-family: FontAwesome
+    font-weight: normal
+    font-style: normal
+    font-size: 2em
+    line-height: 50px
+    color: #fff
+  &:hover
+    cursor: pointer
+    background-color: #333
+  &:active
+    background-color: #555
+  &.show
+    opacity: 1
+    visibility: visible
 
 @import "media" // Always at the end

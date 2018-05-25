@@ -4,7 +4,8 @@
   "description": "OptimizedHTML 4 - Start HTML Template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "micro"
   },
   "author": "WebDesign Master",
   "license": "ISC",
@@ -20,5 +21,10 @@
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "jquery-parallax.js": "^1.5.0",
+    "rellax": "^1.6.2",
+    "micro": "latest"
   }
 }
