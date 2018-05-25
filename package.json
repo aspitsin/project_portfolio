@@ -1,7 +1,7 @@
 {
-  "name": "optimizedhtml",
+  "name": "WebDesignAgency",
   "version": "4.1.0",
-  "description": "OptimizedHTML 4 - Start HTML Template",
+  "description": "WebDesignAgency",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
